@@ -35,6 +35,7 @@
 		710E9E3F2B8BD361009B457D /* DateTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E3E2B8BD361009B457D /* DateTextFieldTableViewCell.swift */; };
 		710E9E422B8BDAD6009B457D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E412B8BDAD6009B457D /* Validator.swift */; };
 		71B4EDF92B8BE6D000469A18 /* ActionButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EDF82B8BE6D000469A18 /* ActionButtonTableViewCell.swift */; };
+		71B4EDFC2B8BF77400469A18 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71B4EDFB2B8BF77400469A18 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B4EDFC2B8BF77400469A18 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +362,9 @@
 			dependencies = (
 			);
 			name = NYTimes;
+			packageProductDependencies = (
+				71B4EDFB2B8BF77400469A18 /* IQKeyboardManagerSwift */,
+			);
 			productName = NYTimes;
 			productReference = 710AE4562B89137800473A9D /* NYTimes.app */;
 			productType = "com.apple.product-type.application";
@@ -432,6 +437,9 @@
 				Base,
 			);
 			mainGroup = 710AE44D2B89137800473A9D;
+			packageReferences = (
+				71B4EDFA2B8BF77400469A18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 710AE4572B89137800473A9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -833,6 +841,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71B4EDFA2B8BF77400469A18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71B4EDFB2B8BF77400469A18 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71B4EDFA2B8BF77400469A18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 710AE44E2B89137800473A9D /* Project object */;
 }

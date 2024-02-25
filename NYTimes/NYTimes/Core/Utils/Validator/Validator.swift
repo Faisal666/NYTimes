@@ -46,7 +46,7 @@ class Validator {
             case .dateInvalid:
                 return "Please select a birthday date"
             case .passwordWeak:
-                return "Password is too weak. Must contain at least 8 characters, including a number and an uppercase letter."
+                return "Password is weak."
             }
         }
     }
