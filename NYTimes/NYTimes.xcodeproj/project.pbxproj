@@ -16,6 +16,25 @@
 		710AE47D2B89137900473A9D /* NYTimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AE47C2B89137900473A9D /* NYTimesUITestsLaunchTests.swift */; };
 		710AE4912B8917D900473A9D /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AE4902B8917D900473A9D /* BaseTabBarViewController.swift */; };
 		710E9E132B8AAE53009B457D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E122B8AAE53009B457D /* APIClient.swift */; };
+		710E9E152B8AB3EE009B457D /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E142B8AB3EE009B457D /* AppConfiguration.swift */; };
+		710E9E172B8AB49F009B457D /* AppRemoteConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E162B8AB49F009B457D /* AppRemoteConfiguration.swift */; };
+		710E9E192B8AB52E009B457D /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E182B8AB52E009B457D /* AppFlow.swift */; };
+		710E9E1B2B8AB9EE009B457D /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E1A2B8AB9EE009B457D /* Main.swift */; };
+		710E9E1E2B8B6E0A009B457D /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E1D2B8B6E0A009B457D /* BaseNavigationViewController.swift */; };
+		710E9E202B8B6ED6009B457D /* UserAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E1F2B8B6ED6009B457D /* UserAuthViewController.swift */; };
+		710E9E242B8B6F6B009B457D /* Extensions+UILayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E232B8B6F6B009B457D /* Extensions+UILayout.swift */; };
+		710E9E272B8B7978009B457D /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E262B8B7978009B457D /* AuthenticationViewModel.swift */; };
+		710E9E292B8B7A14009B457D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E282B8B7A14009B457D /* SignInViewModel.swift */; };
+		710E9E2B2B8B7A1F009B457D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E2A2B8B7A1F009B457D /* SignUpViewModel.swift */; };
+		710E9E2D2B8B7A37009B457D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E2C2B8B7A37009B457D /* SignInViewController.swift */; };
+		710E9E2F2B8B7A40009B457D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E2E2B8B7A40009B457D /* SignUpViewController.swift */; };
+		710E9E322B8B80EC009B457D /* BaseAuthFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E312B8B80EC009B457D /* BaseAuthFormViewController.swift */; };
+		710E9E352B8BAB12009B457D /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E342B8BAB12009B457D /* TextFieldTableViewCell.swift */; };
+		710E9E3A2B8BB0C1009B457D /* BaseAuthFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E392B8BB0C1009B457D /* BaseAuthFormViewModel.swift */; };
+		710E9E3D2B8BB521009B457D /* AuthFormCellTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E3C2B8BB521009B457D /* AuthFormCellTypes.swift */; };
+		710E9E3F2B8BD361009B457D /* DateTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E3E2B8BD361009B457D /* DateTextFieldTableViewCell.swift */; };
+		710E9E422B8BDAD6009B457D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E412B8BDAD6009B457D /* Validator.swift */; };
+		71B4EDF92B8BE6D000469A18 /* ActionButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EDF82B8BE6D000469A18 /* ActionButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +68,25 @@
 		710AE47C2B89137900473A9D /* NYTimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		710AE4902B8917D900473A9D /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		710E9E122B8AAE53009B457D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		710E9E142B8AB3EE009B457D /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		710E9E162B8AB49F009B457D /* AppRemoteConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRemoteConfiguration.swift; sourceTree = "<group>"; };
+		710E9E182B8AB52E009B457D /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		710E9E1A2B8AB9EE009B457D /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		710E9E1D2B8B6E0A009B457D /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		710E9E1F2B8B6ED6009B457D /* UserAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewController.swift; sourceTree = "<group>"; };
+		710E9E232B8B6F6B009B457D /* Extensions+UILayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UILayout.swift"; sourceTree = "<group>"; };
+		710E9E262B8B7978009B457D /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		710E9E282B8B7A14009B457D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		710E9E2A2B8B7A1F009B457D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		710E9E2C2B8B7A37009B457D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		710E9E2E2B8B7A40009B457D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		710E9E312B8B80EC009B457D /* BaseAuthFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthFormViewController.swift; sourceTree = "<group>"; };
+		710E9E342B8BAB12009B457D /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		710E9E392B8BB0C1009B457D /* BaseAuthFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAuthFormViewModel.swift; sourceTree = "<group>"; };
+		710E9E3C2B8BB521009B457D /* AuthFormCellTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFormCellTypes.swift; sourceTree = "<group>"; };
+		710E9E3E2B8BD361009B457D /* DateTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		710E9E412B8BDAD6009B457D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		71B4EDF82B8BE6D000469A18 /* ActionButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +178,7 @@
 		710AE48A2B8914E400473A9D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				710E9E212B8B6F45009B457D /* Utils */,
 				710E9E0C2B8AACBC009B457D /* Service */,
 			);
 			path = Core;
@@ -155,6 +194,7 @@
 		710AE48C2B89168E00473A9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				710E9E362B8BAB19009B457D /* Table View Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,8 +202,8 @@
 		710AE48D2B89169300473A9D /* ViewControlllers */ = {
 			isa = PBXGroup;
 			children = (
-				710E9E102B8AADD2009B457D /* Home */,
 				710E9E0F2B8AADC2009B457D /* Registeration */,
+				710E9E102B8AADD2009B457D /* Home */,
 				710E9E0E2B8AADBA009B457D /* Base */,
 			);
 			path = ViewControlllers;
@@ -182,6 +222,10 @@
 			children = (
 				710AE4592B89137800473A9D /* AppDelegate.swift */,
 				710AE45B2B89137800473A9D /* SceneDelegate.swift */,
+				710E9E142B8AB3EE009B457D /* AppConfiguration.swift */,
+				710E9E162B8AB49F009B457D /* AppRemoteConfiguration.swift */,
+				710E9E182B8AB52E009B457D /* AppFlow.swift */,
+				710E9E1A2B8AB9EE009B457D /* Main.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -197,6 +241,7 @@
 		710E9E0D2B8AADA8009B457D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				710E9E252B8B795A009B457D /* Registeration */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -204,6 +249,7 @@
 		710E9E0E2B8AADBA009B457D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				710E9E1C2B8B6DE8009B457D /* BaseNavigationViewController */,
 				710AE48E2B89169900473A9D /* BaseTabbarController */,
 			);
 			path = Base;
@@ -212,6 +258,10 @@
 		710E9E0F2B8AADC2009B457D /* Registeration */ = {
 			isa = PBXGroup;
 			children = (
+				710E9E1F2B8B6ED6009B457D /* UserAuthViewController.swift */,
+				710E9E312B8B80EC009B457D /* BaseAuthFormViewController.swift */,
+				710E9E2C2B8B7A37009B457D /* SignInViewController.swift */,
+				710E9E2E2B8B7A40009B457D /* SignUpViewController.swift */,
 			);
 			path = Registeration;
 			sourceTree = "<group>";
@@ -221,6 +271,77 @@
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		710E9E1C2B8B6DE8009B457D /* BaseNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E1D2B8B6E0A009B457D /* BaseNavigationViewController.swift */,
+			);
+			path = BaseNavigationViewController;
+			sourceTree = "<group>";
+		};
+		710E9E212B8B6F45009B457D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E402B8BDAC8009B457D /* Validator */,
+				710E9E3B2B8BB50E009B457D /* Enums */,
+				710E9E222B8B6F4A009B457D /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		710E9E222B8B6F4A009B457D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E232B8B6F6B009B457D /* Extensions+UILayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		710E9E252B8B795A009B457D /* Registeration */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E262B8B7978009B457D /* AuthenticationViewModel.swift */,
+				710E9E282B8B7A14009B457D /* SignInViewModel.swift */,
+				710E9E2A2B8B7A1F009B457D /* SignUpViewModel.swift */,
+				710E9E392B8BB0C1009B457D /* BaseAuthFormViewModel.swift */,
+			);
+			path = Registeration;
+			sourceTree = "<group>";
+		};
+		710E9E332B8BAAE1009B457D /* Registeration */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E342B8BAB12009B457D /* TextFieldTableViewCell.swift */,
+				710E9E3E2B8BD361009B457D /* DateTextFieldTableViewCell.swift */,
+				71B4EDF82B8BE6D000469A18 /* ActionButtonTableViewCell.swift */,
+			);
+			path = Registeration;
+			sourceTree = "<group>";
+		};
+		710E9E362B8BAB19009B457D /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E332B8BAAE1009B457D /* Registeration */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		710E9E3B2B8BB50E009B457D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E3C2B8BB521009B457D /* AuthFormCellTypes.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		710E9E402B8BDAC8009B457D /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				710E9E412B8BDAD6009B457D /* Validator.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +474,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710E9E272B8B7978009B457D /* AuthenticationViewModel.swift in Sources */,
+				710E9E192B8AB52E009B457D /* AppFlow.swift in Sources */,
+				710E9E242B8B6F6B009B457D /* Extensions+UILayout.swift in Sources */,
 				710AE45A2B89137800473A9D /* AppDelegate.swift in Sources */,
+				71B4EDF92B8BE6D000469A18 /* ActionButtonTableViewCell.swift in Sources */,
+				710E9E292B8B7A14009B457D /* SignInViewModel.swift in Sources */,
+				710E9E322B8B80EC009B457D /* BaseAuthFormViewController.swift in Sources */,
+				710E9E1B2B8AB9EE009B457D /* Main.swift in Sources */,
+				710E9E2B2B8B7A1F009B457D /* SignUpViewModel.swift in Sources */,
+				710E9E152B8AB3EE009B457D /* AppConfiguration.swift in Sources */,
+				710E9E3D2B8BB521009B457D /* AuthFormCellTypes.swift in Sources */,
+				710E9E3F2B8BD361009B457D /* DateTextFieldTableViewCell.swift in Sources */,
+				710E9E2D2B8B7A37009B457D /* SignInViewController.swift in Sources */,
+				710E9E172B8AB49F009B457D /* AppRemoteConfiguration.swift in Sources */,
+				710E9E2F2B8B7A40009B457D /* SignUpViewController.swift in Sources */,
 				710AE45C2B89137800473A9D /* SceneDelegate.swift in Sources */,
+				710E9E1E2B8B6E0A009B457D /* BaseNavigationViewController.swift in Sources */,
+				710E9E422B8BDAD6009B457D /* Validator.swift in Sources */,
 				710AE4912B8917D900473A9D /* BaseTabBarViewController.swift in Sources */,
+				710E9E352B8BAB12009B457D /* TextFieldTableViewCell.swift in Sources */,
+				710E9E3A2B8BB0C1009B457D /* BaseAuthFormViewModel.swift in Sources */,
 				710E9E132B8AAE53009B457D /* APIClient.swift in Sources */,
+				710E9E202B8B6ED6009B457D /* UserAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
