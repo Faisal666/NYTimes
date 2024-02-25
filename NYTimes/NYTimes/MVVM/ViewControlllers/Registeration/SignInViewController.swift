@@ -9,8 +9,11 @@ import UIKit
 
 class SignInViewController: BaseAuthFormViewController {
 
+    let viewModel: SignInViewModel
+
     init(viewModel: SignInViewModel) {
-        super.init(authFormViewModel: viewModel)
+        self.viewModel = viewModel
+        super.init(authFormViewModel: self.viewModel)
     }
     
     required init?(coder: NSCoder) {

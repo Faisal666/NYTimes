@@ -57,10 +57,12 @@ class BaseAuthFormViewController: UIViewController {
         authFormViewModel.needToRefreshTableViewHandler = { [weak self] in
             self?.tableView.reloadData()
         }
+
+        authFormViewModel.reloadActionButtonHandler = { [weak self] indexOfActionButton in
+            self?.tableView.reloadRows(at: [IndexPath(row: indexOfActionButton, section: 0)], with: .none)
+        }
     }
 
-    func textFieldUpdated(input: String) { } // Overridden
-    func dateFieldUpdated(input: Date) { } // Overridden
     func actionButtonTapped() { } // Overridden
 }
 
@@ -112,10 +114,10 @@ extension BaseAuthFormViewController: TextFieldCellDelegate {
         case .failure(let errorMessage):
             cell.configure(with: errorMessage.errorMessage)
         }
-        textFieldUpdated(input: text)
+        authFormViewModel.fromUpdated(input: text, forCellType: cellType)
     }
     
     func textFieldCell(_ cell: TextFieldTableViewCell, didChangeDate date: Date) {
-        dateFieldUpdated(input: date)
+        authFormViewModel.formBirthdateUpdated(input: date)
     }
 }

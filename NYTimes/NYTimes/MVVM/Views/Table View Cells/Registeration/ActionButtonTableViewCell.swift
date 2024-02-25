@@ -60,5 +60,6 @@ class ActionButtonTableViewCell: UITableViewCell {
 
     func setupCell(title: String, isEnabled: Bool) {
         actionButton.setTitle(title, for: .normal)
+        isActionButtonEnabled = isEnabled
     }
 }

@@ -9,9 +9,20 @@ import Foundation
 
 class Validator {
 
-    enum ValidationResult {
+    enum ValidationResult: Equatable {
         case success
         case failure(ValidationError)
+
+        static func == (lhs: ValidationResult, rhs: ValidationResult) -> Bool {
+             switch (lhs, rhs) {
+             case (.success, .success):
+                 return true
+             case (.failure(_), .failure(_)):
+                 return true
+             default:
+                 return false
+             }
+         }
     }
 
     enum ValidationError: Error {
@@ -73,14 +84,8 @@ class Validator {
         return .success
     }
 
-    static func validateDate(_ dateString: String) -> ValidationResult {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        if formatter.date(from: dateString) == nil {
-            return .failure(ValidationError.dateInvalid)
-        }
-
-        return .success
+    static func validateDate(_ date: Date?) -> ValidationResult {
+        return date != nil ? .success : .failure(ValidationError.dateInvalid)
     }
 
     static func validatePassword(_ password: String) -> ValidationResult {

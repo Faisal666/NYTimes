@@ -9,10 +9,12 @@ import Foundation
 
 class BaseAuthFormViewModel {
 
+    var name: String = ""
     var email: String = ""
     var password: String = ""
-    var phone: String = ""
-    
+    var birthDate: Date? = nil
+    var nationalId: String = ""
+    var phoneNumber: String = ""
 
     var cells: [AuthFormCellTypes] = [] {
         didSet {
@@ -22,11 +24,11 @@ class BaseAuthFormViewModel {
 
     var isActionButtonEnabled: Bool = false {
         didSet {
-            reloadActionButtonHandler?()
+            reloadActionButtonHandler?(cells.count - 1)
         }
     }
 
-    var reloadActionButtonHandler: (() -> Void)?
+    var reloadActionButtonHandler: ((Int) -> Void)?
     var needToRefreshTableViewHandler: (() -> Void)?
 
     func validate(input: String, forCellType cellType: AuthFormCellTypes) -> Validator.ValidationResult {
@@ -45,4 +47,29 @@ class BaseAuthFormViewModel {
             Validator.ValidationResult.success
         }
     }
+
+    func fromUpdated(input: String, forCellType cellType: AuthFormCellTypes) {
+        switch cellType {
+        case .email:
+            email = input
+        case .name:
+            name = input
+        case .nationalID:
+            nationalId = input
+        case .phoneNumber:
+            phoneNumber = input
+        case .password:
+            password = input
+        default:
+            break
+        }
+        formUpdated()
+    }
+
+    func formBirthdateUpdated(input: Date) {
+        birthDate = input
+        formUpdated()
+    }
+
+    func formUpdated() { } // Overridden
 }

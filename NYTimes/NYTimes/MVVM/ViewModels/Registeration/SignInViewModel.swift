@@ -13,4 +13,13 @@ class SignInViewModel: BaseAuthFormViewModel {
         super.init()
         cells = [.email, .password, .actionButton(title: "Sign in")]
     }
+
+    func validateForm() {
+        let isValid = Validator.validateEmail(email) == .success && Validator.validatePassword(password) == .success
+        isActionButtonEnabled = isValid
+    }
+
+    override func formUpdated() {
+        validateForm()
+    }
 }

@@ -9,8 +9,11 @@ import UIKit
 
 class SignUpViewController: BaseAuthFormViewController {
 
+    let viewModel: SignUpViewModel
+
     init(viewModel: SignUpViewModel) {
-        super.init(authFormViewModel: viewModel)
+        self.viewModel = viewModel
+        super.init(authFormViewModel: self.viewModel)
     }
 
     required init?(coder: NSCoder) {
@@ -20,12 +23,4 @@ class SignUpViewController: BaseAuthFormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-//
-//    override func dateFieldUpdated(cellType: AuthFormCellTypes, input: Date) {
-//        
-//    }
-//
-//    override func textFieldUpdated(cellType: AuthFormCellTypes, input: String) {
-//        
-//    }
 }
