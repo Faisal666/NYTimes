@@ -23,4 +23,15 @@ class SignUpViewController: BaseAuthFormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    override func actionButtonTapped() {
+        viewModel.signUp { [weak self] result in
+            switch result {
+            case .success:
+                self?.moveToHomeScreen()
+            case .failure(let error):
+                self?.displayError(message: error.errorMessage)
+            }
+        }
+    }
 }

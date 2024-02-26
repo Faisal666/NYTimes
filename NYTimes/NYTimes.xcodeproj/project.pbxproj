@@ -36,6 +36,12 @@
 		710E9E422B8BDAD6009B457D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E9E412B8BDAD6009B457D /* Validator.swift */; };
 		71B4EDF92B8BE6D000469A18 /* ActionButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EDF82B8BE6D000469A18 /* ActionButtonTableViewCell.swift */; };
 		71B4EDFC2B8BF77400469A18 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71B4EDFB2B8BF77400469A18 /* IQKeyboardManagerSwift */; };
+		71B4EDFF2B8BFACA00469A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EDFE2B8BFACA00469A18 /* User.swift */; };
+		71B4EE032B8BFD2700469A18 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 71B4EE022B8BFD2700469A18 /* Realm */; };
+		71B4EE052B8BFD2700469A18 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71B4EE042B8BFD2700469A18 /* RealmSwift */; };
+		71B4EE082B8BFDD000469A18 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE072B8BFDD000469A18 /* RealmManager.swift */; };
+		71B4EE0A2B8BFE9D00469A18 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE092B8BFE9D00469A18 /* UserSessionManager.swift */; };
+		71B4EE0C2B8C04BF00469A18 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE0B2B8C04BF00469A18 /* AuthError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +94,10 @@
 		710E9E3E2B8BD361009B457D /* DateTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		710E9E412B8BDAD6009B457D /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		71B4EDF82B8BE6D000469A18 /* ActionButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonTableViewCell.swift; sourceTree = "<group>"; };
+		71B4EDFE2B8BFACA00469A18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		71B4EE072B8BFDD000469A18 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		71B4EE092B8BFE9D00469A18 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
+		71B4EE0B2B8C04BF00469A18 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B4EE052B8BFD2700469A18 /* RealmSwift in Frameworks */,
+				71B4EE032B8BFD2700469A18 /* Realm in Frameworks */,
 				71B4EDFC2B8BF77400469A18 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +192,7 @@
 		710AE48A2B8914E400473A9D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				71B4EE062B8BFDA100469A18 /* Managers */,
 				710E9E212B8B6F45009B457D /* Utils */,
 				710E9E0C2B8AACBC009B457D /* Service */,
 			);
@@ -189,6 +202,7 @@
 		710AE48B2B89168900473A9D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				71B4EDFE2B8BFACA00469A18 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				710E9E3C2B8BB521009B457D /* AuthFormCellTypes.swift */,
+				71B4EE0B2B8C04BF00469A18 /* AuthError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -344,6 +359,15 @@
 				710E9E412B8BDAD6009B457D /* Validator.swift */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		71B4EE062B8BFDA100469A18 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				71B4EE072B8BFDD000469A18 /* RealmManager.swift */,
+				71B4EE092B8BFE9D00469A18 /* UserSessionManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +388,8 @@
 			name = NYTimes;
 			packageProductDependencies = (
 				71B4EDFB2B8BF77400469A18 /* IQKeyboardManagerSwift */,
+				71B4EE022B8BFD2700469A18 /* Realm */,
+				71B4EE042B8BFD2700469A18 /* RealmSwift */,
 			);
 			productName = NYTimes;
 			productReference = 710AE4562B89137800473A9D /* NYTimes.app */;
@@ -439,6 +465,7 @@
 			mainGroup = 710AE44D2B89137800473A9D;
 			packageReferences = (
 				71B4EDFA2B8BF77400469A18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				71B4EE012B8BFD2700469A18 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 710AE4572B89137800473A9D /* Products */;
 			projectDirPath = "";
@@ -495,6 +522,7 @@
 				710E9E3D2B8BB521009B457D /* AuthFormCellTypes.swift in Sources */,
 				710E9E3F2B8BD361009B457D /* DateTextFieldTableViewCell.swift in Sources */,
 				710E9E2D2B8B7A37009B457D /* SignInViewController.swift in Sources */,
+				71B4EE0A2B8BFE9D00469A18 /* UserSessionManager.swift in Sources */,
 				710E9E172B8AB49F009B457D /* AppRemoteConfiguration.swift in Sources */,
 				710E9E2F2B8B7A40009B457D /* SignUpViewController.swift in Sources */,
 				710AE45C2B89137800473A9D /* SceneDelegate.swift in Sources */,
@@ -502,8 +530,11 @@
 				710E9E422B8BDAD6009B457D /* Validator.swift in Sources */,
 				710AE4912B8917D900473A9D /* BaseTabBarViewController.swift in Sources */,
 				710E9E352B8BAB12009B457D /* TextFieldTableViewCell.swift in Sources */,
+				71B4EDFF2B8BFACA00469A18 /* User.swift in Sources */,
 				710E9E3A2B8BB0C1009B457D /* BaseAuthFormViewModel.swift in Sources */,
+				71B4EE082B8BFDD000469A18 /* RealmManager.swift in Sources */,
 				710E9E132B8AAE53009B457D /* APIClient.swift in Sources */,
+				71B4EE0C2B8C04BF00469A18 /* AuthError.swift in Sources */,
 				710E9E202B8B6ED6009B457D /* UserAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -851,6 +882,14 @@
 				minimumVersion = 7.0.1;
 			};
 		};
+		71B4EE012B8BFD2700469A18 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -858,6 +897,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 71B4EDFA2B8BF77400469A18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		71B4EE022B8BFD2700469A18 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71B4EE012B8BFD2700469A18 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		71B4EE042B8BFD2700469A18 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71B4EE012B8BFD2700469A18 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -63,6 +63,18 @@ class BaseAuthFormViewController: UIViewController {
         }
     }
 
+    func moveToHomeScreen() {
+        guard let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else { return }
+        sceneDelegate.changeRootViewController(to: BaseTabBarViewController(), animated: true)
+    }
+
+    func displayError(message: String) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+
     func actionButtonTapped() { } // Overridden
 }
 

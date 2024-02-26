@@ -9,8 +9,8 @@ import Foundation
 
 class SignInViewModel: BaseAuthFormViewModel {
 
-    override init() {
-        super.init()
+    override init(userSessionManager: UserSessionManaging = UserSessionManager()) {
+        super.init(userSessionManager: userSessionManager)
         cells = [.email, .password, .actionButton(title: "Sign in")]
     }
 
@@ -21,5 +21,9 @@ class SignInViewModel: BaseAuthFormViewModel {
 
     override func formUpdated() {
         validateForm()
+    }
+
+    func signIn(completion: @escaping (Result<Void, AuthError>) -> Void) {
+        userSessionManager.signIn(email: email, password: password, completion: completion)
     }
 }

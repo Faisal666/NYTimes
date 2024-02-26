@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CryptoKit
 
 class BaseAuthFormViewModel {
 
@@ -15,6 +16,11 @@ class BaseAuthFormViewModel {
     var birthDate: Date? = nil
     var nationalId: String = ""
     var phoneNumber: String = ""
+    let userSessionManager: UserSessionManaging
+
+    init(userSessionManager: UserSessionManaging) {
+        self.userSessionManager = userSessionManager
+    }
 
     var cells: [AuthFormCellTypes] = [] {
         didSet {
@@ -69,6 +75,14 @@ class BaseAuthFormViewModel {
     func formBirthdateUpdated(input: Date) {
         birthDate = input
         formUpdated()
+    }
+
+    func hashPassword(_ password: String) -> String {
+        let inputData = Data(password.utf8)
+        let hashedData = SHA256.hash(data: inputData)
+        let hashString = hashedData.compactMap { String(format: "%02x", $0) }.joined()
+
+        return hashString
     }
 
     func formUpdated() { } // Overridden

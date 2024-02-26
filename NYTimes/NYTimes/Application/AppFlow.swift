@@ -12,12 +12,20 @@ protocol AppFlow {
 }
 
 final class AppFlowReal: AppFlow {
+    let userSessionManager: UserSessionManaging
+
+    init(userSessionManager: UserSessionManaging = UserSessionManager()) {
+        self.userSessionManager = userSessionManager
+    }
+
     func getInitialViewController() -> UIViewController {
-        let isLoggedIn = false
+        let isLoggedIn = userSessionManager.currentUser != nil
+        
         if isLoggedIn {
-            let mainVC = UIViewController()
-            mainVC.view.backgroundColor = .green
-            return mainVC
+            let tabbarController = BaseTabBarViewController()
+            let navigation = BaseNavigationViewController(rootViewController: tabbarController)
+            return navigation
+
         } else {
             let userAuthViewController = UserAuthViewController(viewModel: AuthenticationViewModel())
             let navigation = BaseNavigationViewController(rootViewController: userAuthViewController)

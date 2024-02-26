@@ -7,10 +7,10 @@
 
 import Foundation
 
-
 class SignUpViewModel: BaseAuthFormViewModel {
-    override init() {
-        super.init()
+
+    override init(userSessionManager: UserSessionManaging = UserSessionManager()) {
+        super.init(userSessionManager: userSessionManager)
         cells = [.name, .email, .password, .phoneNumber, .date, .actionButton(title: "Sign Up")]
     }
 
@@ -25,6 +25,10 @@ class SignUpViewModel: BaseAuthFormViewModel {
 
     override func formUpdated() {
         validateForm()
+    }
+
+    func signUp(completion: @escaping (Result<Void, AuthError>) -> Void) {
+        userSessionManager.signUp(email: email, name: name, nationalID: nationalId, phoneNumber: phoneNumber, birthdate: birthDate, password: password, completion: completion)
     }
 }
 

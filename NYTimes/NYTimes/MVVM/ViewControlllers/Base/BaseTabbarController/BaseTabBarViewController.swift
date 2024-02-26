@@ -17,7 +17,7 @@ class BaseTabBarViewController: UITabBarController {
             switch self {
             case .dashboard:
                 let vc = UIViewController()
-                vc.view.backgroundColor = .blue
+                vc.title = "hi"
                 return vc
 
             case .more:
