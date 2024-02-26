@@ -12,6 +12,8 @@ protocol RealmManaging {
     func deleteObject<T: Object>(_ object: T)
     func fetchObjects<T: Object>(_ type: T.Type) -> Results<T>
     func updateObject(_ block: @escaping () -> Void)
+    func deleteAllObjects<T: Object>(_ type: T.Type)
+    func addObjects<T: Object>(_ object: [T])
 }
 
 class RealmManager: RealmManaging {
@@ -26,9 +28,21 @@ class RealmManager: RealmManaging {
         }
     }
 
+    func addObjects<T: Object>(_ object: [T]) {
+        try? realm.write {
+            realm.add(object)
+        }
+    }
+
     func deleteObject<T: Object>(_ object: T) {
         try? realm.write {
             realm.delete(object)
+        }
+    }
+
+    func deleteAllObjects<T: Object>(_ type: T.Type) {
+        try? realm.write {
+            realm.delete(realm.objects(type))
         }
     }
 

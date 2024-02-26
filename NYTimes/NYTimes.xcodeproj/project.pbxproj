@@ -42,6 +42,19 @@
 		71B4EE082B8BFDD000469A18 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE072B8BFDD000469A18 /* RealmManager.swift */; };
 		71B4EE0A2B8BFE9D00469A18 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE092B8BFE9D00469A18 /* UserSessionManager.swift */; };
 		71B4EE0C2B8C04BF00469A18 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE0B2B8C04BF00469A18 /* AuthError.swift */; };
+		71B4EE0E2B8C0F2700469A18 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE0D2B8C0F2700469A18 /* DashboardViewController.swift */; };
+		71B4EE142B8C117C00469A18 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 71B4EE132B8C117C00469A18 /* Kingfisher */; };
+		71B4EE182B8C12CA00469A18 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE172B8C12CA00469A18 /* ArticleTableViewCell.swift */; };
+		71B4EE1A2B8C135A00469A18 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE192B8C135A00469A18 /* ImageLoader.swift */; };
+		71B4EE1C2B8C17EA00469A18 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE1B2B8C17EA00469A18 /* NetworkService.swift */; };
+		71B4EE1E2B8C194B00469A18 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE1D2B8C194B00469A18 /* HTTPMethod.swift */; };
+		71B4EE202B8C19AE00469A18 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE1F2B8C19AE00469A18 /* NetworkError.swift */; };
+		71B4EE222B8C1D9800469A18 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE212B8C1D9800469A18 /* APIRoute.swift */; };
+		71B4EE242B8C203500469A18 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE232B8C203500469A18 /* Article.swift */; };
+		71B4EE262B8C2AD100469A18 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE252B8C2AD100469A18 /* DashboardViewModel.swift */; };
+		71B4EE282B8C2C4B00469A18 /* CachedArticlesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE272B8C2C4B00469A18 /* CachedArticlesManager.swift */; };
+		71B4EE2A2B8C334C00469A18 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE292B8C334C00469A18 /* Extensions+String.swift */; };
+		71B4EE2D2B8C379A00469A18 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B4EE2C2B8C379A00469A18 /* Debouncer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +111,18 @@
 		71B4EE072B8BFDD000469A18 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		71B4EE092B8BFE9D00469A18 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		71B4EE0B2B8C04BF00469A18 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		71B4EE0D2B8C0F2700469A18 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		71B4EE172B8C12CA00469A18 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		71B4EE192B8C135A00469A18 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		71B4EE1B2B8C17EA00469A18 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		71B4EE1D2B8C194B00469A18 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		71B4EE1F2B8C19AE00469A18 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		71B4EE212B8C1D9800469A18 /* APIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoute.swift; sourceTree = "<group>"; };
+		71B4EE232B8C203500469A18 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		71B4EE252B8C2AD100469A18 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		71B4EE272B8C2C4B00469A18 /* CachedArticlesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedArticlesManager.swift; sourceTree = "<group>"; };
+		71B4EE292B8C334C00469A18 /* Extensions+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
+		71B4EE2C2B8C379A00469A18 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B4EE142B8C117C00469A18 /* Kingfisher in Frameworks */,
 				71B4EE052B8BFD2700469A18 /* RealmSwift in Frameworks */,
 				71B4EE032B8BFD2700469A18 /* Realm in Frameworks */,
 				71B4EDFC2B8BF77400469A18 /* IQKeyboardManagerSwift in Frameworks */,
@@ -203,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				71B4EDFE2B8BFACA00469A18 /* User.swift */,
+				71B4EE232B8C203500469A18 /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				710E9E0F2B8AADC2009B457D /* Registeration */,
-				710E9E102B8AADD2009B457D /* Home */,
+				710E9E102B8AADD2009B457D /* Dashboard */,
 				710E9E0E2B8AADBA009B457D /* Base */,
 			);
 			path = ViewControlllers;
@@ -250,6 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				710E9E122B8AAE53009B457D /* APIClient.swift */,
+				71B4EE1B2B8C17EA00469A18 /* NetworkService.swift */,
+				71B4EE212B8C1D9800469A18 /* APIRoute.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -257,6 +286,7 @@
 		710E9E0D2B8AADA8009B457D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				71B4EE152B8C129C00469A18 /* Dashboard */,
 				710E9E252B8B795A009B457D /* Registeration */,
 			);
 			path = ViewModels;
@@ -282,11 +312,12 @@
 			path = Registeration;
 			sourceTree = "<group>";
 		};
-		710E9E102B8AADD2009B457D /* Home */ = {
+		710E9E102B8AADD2009B457D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				71B4EE0D2B8C0F2700469A18 /* DashboardViewController.swift */,
 			);
-			path = Home;
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		710E9E1C2B8B6DE8009B457D /* BaseNavigationViewController */ = {
@@ -300,6 +331,7 @@
 		710E9E212B8B6F45009B457D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				71B4EE2B2B8C378C00469A18 /* Debouncer */,
 				710E9E402B8BDAC8009B457D /* Validator */,
 				710E9E3B2B8BB50E009B457D /* Enums */,
 				710E9E222B8B6F4A009B457D /* Extensions */,
@@ -311,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				710E9E232B8B6F6B009B457D /* Extensions+UILayout.swift */,
+				71B4EE292B8C334C00469A18 /* Extensions+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,6 +372,7 @@
 		710E9E362B8BAB19009B457D /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				71B4EE162B8C12A900469A18 /* Dashboard */,
 				710E9E332B8BAAE1009B457D /* Registeration */,
 			);
 			path = "Table View Cells";
@@ -349,6 +383,8 @@
 			children = (
 				710E9E3C2B8BB521009B457D /* AuthFormCellTypes.swift */,
 				71B4EE0B2B8C04BF00469A18 /* AuthError.swift */,
+				71B4EE1D2B8C194B00469A18 /* HTTPMethod.swift */,
+				71B4EE1F2B8C19AE00469A18 /* NetworkError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -366,8 +402,34 @@
 			children = (
 				71B4EE072B8BFDD000469A18 /* RealmManager.swift */,
 				71B4EE092B8BFE9D00469A18 /* UserSessionManager.swift */,
+				71B4EE192B8C135A00469A18 /* ImageLoader.swift */,
+				71B4EE272B8C2C4B00469A18 /* CachedArticlesManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		71B4EE152B8C129C00469A18 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				71B4EE252B8C2AD100469A18 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		71B4EE162B8C12A900469A18 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				71B4EE172B8C12CA00469A18 /* ArticleTableViewCell.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		71B4EE2B2B8C378C00469A18 /* Debouncer */ = {
+			isa = PBXGroup;
+			children = (
+				71B4EE2C2B8C379A00469A18 /* Debouncer.swift */,
+			);
+			path = Debouncer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +452,7 @@
 				71B4EDFB2B8BF77400469A18 /* IQKeyboardManagerSwift */,
 				71B4EE022B8BFD2700469A18 /* Realm */,
 				71B4EE042B8BFD2700469A18 /* RealmSwift */,
+				71B4EE132B8C117C00469A18 /* Kingfisher */,
 			);
 			productName = NYTimes;
 			productReference = 710AE4562B89137800473A9D /* NYTimes.app */;
@@ -466,6 +529,7 @@
 			packageReferences = (
 				71B4EDFA2B8BF77400469A18 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				71B4EE012B8BFD2700469A18 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				71B4EE122B8C117C00469A18 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 710AE4572B89137800473A9D /* Products */;
 			projectDirPath = "";
@@ -510,21 +574,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				710E9E272B8B7978009B457D /* AuthenticationViewModel.swift in Sources */,
+				71B4EE2A2B8C334C00469A18 /* Extensions+String.swift in Sources */,
 				710E9E192B8AB52E009B457D /* AppFlow.swift in Sources */,
 				710E9E242B8B6F6B009B457D /* Extensions+UILayout.swift in Sources */,
+				71B4EE262B8C2AD100469A18 /* DashboardViewModel.swift in Sources */,
 				710AE45A2B89137800473A9D /* AppDelegate.swift in Sources */,
+				71B4EE222B8C1D9800469A18 /* APIRoute.swift in Sources */,
 				71B4EDF92B8BE6D000469A18 /* ActionButtonTableViewCell.swift in Sources */,
 				710E9E292B8B7A14009B457D /* SignInViewModel.swift in Sources */,
 				710E9E322B8B80EC009B457D /* BaseAuthFormViewController.swift in Sources */,
 				710E9E1B2B8AB9EE009B457D /* Main.swift in Sources */,
 				710E9E2B2B8B7A1F009B457D /* SignUpViewModel.swift in Sources */,
+				71B4EE202B8C19AE00469A18 /* NetworkError.swift in Sources */,
+				71B4EE1A2B8C135A00469A18 /* ImageLoader.swift in Sources */,
 				710E9E152B8AB3EE009B457D /* AppConfiguration.swift in Sources */,
 				710E9E3D2B8BB521009B457D /* AuthFormCellTypes.swift in Sources */,
+				71B4EE242B8C203500469A18 /* Article.swift in Sources */,
+				71B4EE282B8C2C4B00469A18 /* CachedArticlesManager.swift in Sources */,
+				71B4EE1E2B8C194B00469A18 /* HTTPMethod.swift in Sources */,
 				710E9E3F2B8BD361009B457D /* DateTextFieldTableViewCell.swift in Sources */,
 				710E9E2D2B8B7A37009B457D /* SignInViewController.swift in Sources */,
 				71B4EE0A2B8BFE9D00469A18 /* UserSessionManager.swift in Sources */,
 				710E9E172B8AB49F009B457D /* AppRemoteConfiguration.swift in Sources */,
+				71B4EE2D2B8C379A00469A18 /* Debouncer.swift in Sources */,
+				71B4EE0E2B8C0F2700469A18 /* DashboardViewController.swift in Sources */,
 				710E9E2F2B8B7A40009B457D /* SignUpViewController.swift in Sources */,
+				71B4EE182B8C12CA00469A18 /* ArticleTableViewCell.swift in Sources */,
 				710AE45C2B89137800473A9D /* SceneDelegate.swift in Sources */,
 				710E9E1E2B8B6E0A009B457D /* BaseNavigationViewController.swift in Sources */,
 				710E9E422B8BDAD6009B457D /* Validator.swift in Sources */,
@@ -534,6 +609,7 @@
 				710E9E3A2B8BB0C1009B457D /* BaseAuthFormViewModel.swift in Sources */,
 				71B4EE082B8BFDD000469A18 /* RealmManager.swift in Sources */,
 				710E9E132B8AAE53009B457D /* APIClient.swift in Sources */,
+				71B4EE1C2B8C17EA00469A18 /* NetworkService.swift in Sources */,
 				71B4EE0C2B8C04BF00469A18 /* AuthError.swift in Sources */,
 				710E9E202B8B6ED6009B457D /* UserAuthViewController.swift in Sources */,
 			);
@@ -587,6 +663,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://api.nytimes.com";
+				API_KEY = ygPeHPQnr23avGozGhG80B12cWXsQgPM;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -650,6 +728,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "https://api.nytimes.com";
+				API_KEY = ygPeHPQnr23avGozGhG80B12cWXsQgPM;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -716,6 +796,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -743,6 +824,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -890,6 +972,14 @@
 				kind = branch;
 			};
 		};
+		71B4EE122B8C117C00469A18 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -907,6 +997,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 71B4EE012B8BFD2700469A18 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		71B4EE132B8C117C00469A18 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71B4EE122B8C117C00469A18 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

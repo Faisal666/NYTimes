@@ -20,11 +20,10 @@ final class AppFlowReal: AppFlow {
 
     func getInitialViewController() -> UIViewController {
         let isLoggedIn = userSessionManager.currentUser != nil
-        
+
         if isLoggedIn {
             let tabbarController = BaseTabBarViewController()
-            let navigation = BaseNavigationViewController(rootViewController: tabbarController)
-            return navigation
+            return tabbarController
 
         } else {
             let userAuthViewController = UserAuthViewController(viewModel: AuthenticationViewModel())
