@@ -11,7 +11,7 @@ class SignUpViewModel: BaseAuthFormViewModel {
 
     override init(userSessionManager: UserSessionManaging = UserSessionManager()) {
         super.init(userSessionManager: userSessionManager)
-        cells = [.name, .email, .password, .phoneNumber, .date, .actionButton(title: "Sign Up")]
+        cells = [.name, .email, .nationalID, .password, .phoneNumber, .date, .actionButton(title: "Sign Up")]
     }
 
     func validateForm() {
@@ -19,7 +19,8 @@ class SignUpViewModel: BaseAuthFormViewModel {
         Validator.validatePassword(password) == .success &&
         Validator.validateName(name) == .success &&
         Validator.validatePhoneNumber(phoneNumber) == .success && 
-        Validator.validateDate(birthDate) == .success
+        Validator.validateDate(birthDate) == .success &&
+        Validator.validateNationalID(nationalId) == .success
         isActionButtonEnabled = isValid
     }
 

@@ -17,14 +17,15 @@ class BaseTabBarViewController: UITabBarController {
             switch self {
             case .dashboard:
 
-                let vc = DashboardViewController(viewModel: DashboardViewModel())
-                let navigation = BaseNavigationViewController(rootViewController: vc)
+                let dashboardViewController = DashboardViewController(viewModel: DashboardViewModel())
+                let navigation = BaseNavigationViewController(rootViewController: dashboardViewController)
                 return navigation
 
             case .more:
-                let vc = UIViewController()
-                vc.view.backgroundColor = .red
-                return vc
+                
+                let moreViewController = MoreViewController(viewModel: MoreViewViewModel())
+                let navigation = BaseNavigationViewController(rootViewController: moreViewController)
+                return navigation
             }
         }
 
